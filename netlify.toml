@@ -1,5 +1,5 @@
 [build]
-  functions = "netlify/functions"
+  functions = "root/netlify/functions"
 
 [functions]
   # Enable Node.js runtime for functions
