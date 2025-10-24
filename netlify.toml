@@ -1,0 +1,9 @@
+[build]
+  functions = "netlify/functions"
+
+[functions]
+  # Enable Node.js runtime for functions
+  included_files = ["node_modules/**"]
+
+[dev]
+  command = "npm run dev"
