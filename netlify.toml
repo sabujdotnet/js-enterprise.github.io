@@ -6,4 +6,4 @@
   included_files = ["node_modules/**"]
 
 [dev]
-  command = "npm build"
+  command = "npm run build"
