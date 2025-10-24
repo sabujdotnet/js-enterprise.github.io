@@ -1,21 +1,13 @@
 [build]
-  # Use the repo's build script
   command = "npm run build"
-  # Set publish to the folder produced by your build. Replace "public" if your build outputs elsewhere.
   publish = "public"
-  # Functions directory relative to repo root
   functions = "netlify/functions"
 
 [functions]
-  # Use esbuild bundler for functions (optional)
-  node_bundler = "esbuild"
-  # Include node_modules only if your functions need them at build/bundle time
   included_files = ["node_modules/**"]
 
 [build.environment]
-  # Explicit Node version for the build (optional; match your runtime needs)
   NODE_VERSION = "18"
 
 [dev]
-  # Local dev command (this is used for `netlify dev` not production builds)
   command = "npm start"
